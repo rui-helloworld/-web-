@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>网易云</title>
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="CSS/webapp.css">
+	<script src="./js/jquery-3.5.1.js"></script>
+	<!-- <script>
+		$(function(){
+    //获取li的长度
+    var len=$(".oLi").length;
+    //把所有li的宽度算好,赋值给ul当宽度
+    $("#banner").width($(".oLi").eq(0).width()*len);
+    //id是为了后面的计时器暂停设置的
+    var id;
+    //index用来统计滚动次数
+    var index=0;
+    //启动计时器
+    id=setInterval(start,3000);
+    //给ul(#banner)添加hover选择器事件
+    $("#banner").hover(function(){
+        //鼠标进入的时候暂停
+        clearInterval(id);
+    },function(){
+        //鼠标离开的时候开始
+        id=setInterval(start,3000);
+    });
+    //计时器中执行的代码块
+    function start(){
+        //执行的时候次数++
+        index++;
+        //用animate设置ul的left属性,与左边的距离
+        $("#banner").animate({'left':-$(".oLi").eq(0).width()*(index%len)});
+        //实现无缝轮播的关键地方
+        //判断index%len的值index%len=0的时候表示第一张,那么len-1表示最后一张,
+        //最后一张与第一张一模一样,所有直接修改left属性
+        if(index%len==(len-1)){
+            $("#banner").animate({'left':0},0);
+            //同时给index+1跳过第一张图的再次加载
+            index++;
+        }
+        //实际的加载情况就是第一张,第二张,第三张,第四张,第五张(瞬间改变图片为第一张的,是一模一样的替换,不是滚动,看不出来,所以称之为无缝轮播),第二张...
+    }
+	});	
+	</script> -->
+</head>
+<body>
+	<section class="find_music">
+	<!-- header -->
+		<header>
+			<i class="iconfont">&#xe62f;</i>
+			<form action="">
+				<i class="iconfont">&#xe660;</i><input type="text" placeholder="搜索音乐、歌词、电台">
+			</form>
+			<i class="iconfont">&#xe513;</i>
+		</header>
+		<!-- header  end-->
+		<!-- nav -->
+		<nav>
+			<a href="">个性推荐</a>
+			<a href="">歌单</a>
+			<a href="">主播电台</a>
+			<a href="">排行榜</a>
+		</nav>
+		<!-- nav end -->
+		<!-- content -->
+		<main>
+			<section class="content">
+				<article class="banner">
+					<img src="IMG/banner_0.png" alt="">
+				</article>
+				<article class="adcontent">
+					<dl>
+						<dt class="iconfont">&#xe627;</dt>
+						<dd>私人FM</dd>
+					</dl>
+					<dl>
+						<dt class="iconfont">&#xe611;</dt>
+						<dd>开启个性推荐</dd>
+					</dl>
+					<dl>
+						<dt class="iconfont">&#xe513;</dt>
+						<dd>云音乐新歌榜</dd>
+					</dl>
+				</article>
+				<article class="title">
+					<aside>
+						<i class="iconfont">&#xe637;</i>
+						<span>推荐歌单</span>
+					</aside>
+					<aside>
+						<i>更多</i>
+						<span>&gt;</span>
+					</aside>
+				</article>
+				<article class="imglist">
+					<dl>
+						<dt>
+							<img src="IMG/pic_07.png" alt="">
+						</dt>
+						<dd>华语女声|那些入耳的人心的代表曲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="IMG/pic_07.png" alt="">
+						</dt>
+						<dd>华语女声|那些入耳的人心的代表曲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="IMG/pic_07.png" alt="">
+						</dt>
+						<dd>华语女声|那些入耳的人心的代表曲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="IMG/pic_07.png" alt="">
+						</dt>
+						<dd>华语女声|那些入耳的人心的代表曲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="IMG/pic_07.png" alt="">
+						</dt>
+						<dd>华语女声|那些入耳的人心的代表曲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="IMG/pic_07.png" alt="">
+						</dt>
+						<dd>华语女声|那些入耳的人心的代表曲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="IMG/pic_07.png" alt="">
+						</dt>
+						<dd>华语女声|那些入耳的人心的代表曲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="IMG/pic_07.png" alt="">
+						</dt>
+						<dd>华语女声|那些入耳的人心的代表曲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="IMG/pic_07.png" alt="">
+						</dt>
+						<dd>华语女声|那些入耳的人心的代表曲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="IMG/pic_07.png" alt="">
+						</dt>
+						<dd>华语女声|那些入耳的人心的代表曲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="IMG/pic_07.png" alt="">
+						</dt>
+						<dd>华语女声|那些入耳的人心的代表曲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="IMG/pic_07.png" alt="">
+						</dt>
+						<dd>华语女声|那些入耳的人心的代表曲</dd>
+					</dl>
+				</article>
+			</section>
+		</main>
+		<!-- main end -->
+	</section>
+	<section style="display: none;" class="my_music">
+		<header class="user">
+			<div class="user_portrait">
+				<img src="./IMG/touxiang.jpg" alt="">
+			</div>
+			<div class="user_details">
+				<h2 class="name">冷冷的小锐锐</h2>
+			</div>
+		</header>
+	</section>
+	<section style="display: none;" class="friend">
+		<p>2222</p>
+		<p>2222</p>
+		<p>2222</p>
+		<p>2222</p>
+	</section>
+	<section style="display: none;" class="account">
+		<p>3333</p>
+		<p>3333</p>
+		<p>3333</p>
+		<p>3333</p>
+	</section>
+	<!-- footer -->
+	<footer>
+		<aside id="find_music"><i class="iconfont">&#xe612;</i><span>发现音乐</span></aside>
+		<aside id="my_music"><i class="iconfont">&#xe503;</i><span>我的音乐</span></aside>
+		<aside id="friend"><i class="iconfont">&#xe615;</i><span>朋友</span></aside>
+		<aside id="account"><i class="iconfont">&#xe504;</i><span>账号</span></aside>
+	</footer>
+	<!-- foot end -->
+</body>
+	<script src="./js/1.js"></script>
+</html>
